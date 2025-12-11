@@ -1,0 +1,14 @@
+CREATE DATABASE db_smk_coding;
+
+USE db_smk_coding;
+
+CREATE TABLE siswa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    nis VARCHAR(20) NOT NULL,
+    jurusan VARCHAR(50) NOT NULL,
+    jenis_kelamin ENUM('L','P') NOT NULL,
+    no_hp VARCHAR(20),
+    alamat TEXT,
+    tanggal_daftar DATE NOT NULL
+);
